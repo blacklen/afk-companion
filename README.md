@@ -8,7 +8,7 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | Code | Server | Reward | Status |
 |---|---|---|---|
 | `13thlilith` | classic | 1300 Diamonds | pending |
-| `2025selene` | companions | — | pending |
+| `2025selene` | companions | — | claimed |
 | `2b9pyu99rn` | classic | — | pending |
 | `2bfe265g6x` | classic | 1000 Diamonds | pending |
 | `2bjzpbed53` | classic | 2000 Diamonds | pending |
@@ -64,7 +64,7 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | `ujqrukd2at` | classic | 1200 Diamonds | pending |
 | `vdj82fht4r` | classic | 3000 Diamonds | pending |
 
-_Last updated: 2026-05-29T05:28:54.638909 UTC · 🔒 = permanent_
+_Last updated: 2026-05-29T08:47:05.543082 UTC · 🔒 = permanent_
 <!-- CODES:END -->
 
 > This table is regenerated automatically every run. `🔒` marks permanent codes.
@@ -109,19 +109,25 @@ Runs automatically every **3 hours**, completely free.
 
 ## 🎟️ Auto-redeem codes (`redeem.py`)
 
-The scraper only *tells* you about codes. `redeem.py` actually **claims every pending code** for your account in one go.
+The scraper only *tells* you about codes. `redeem.py` actually **claims every pending code for your server** in one go.
 
-AFK Arena's redemption requires a **verification code that rotates every 2 minutes**, generated inside the game — so this step can't run unattended on the cron. You trigger it and hand it a fresh code:
+Logging in needs a **verification code that rotates every ~2 minutes** (generated in-game), so this step can't run unattended on the cron — you trigger it and paste a fresh code. Once logged in, the session lasts ~3 hours, so it redeems your codes at a polite pace.
 
 ```bash
-# 1. In-game: tap your profile → Settings → Verification Code
-# 2. Run (works fastest locally, before the 2-minute code expires):
-AFK_PLAYER_UID=<your_numeric_uid> python redeem.py <verification_code>
+# 1. Find your numeric UID in-game (tap your profile)
+export AFK_PLAYER_UID=<your_uid>
+export AFK_SERVER=companions        # or "classic" (default: companions)
+
+# 2. Run it, then paste a FRESH code at the prompt (Settings → Verification Code)
+python redeem.py
 ```
 
-A single verified session redeems **all** pending codes at once. Each result is recorded in `known_codes.json` (`claimed` / `expired` / `invalid`) so the active-codes table above stays accurate and dead codes are never re-notified. Rewards arrive in your in-game mailbox.
+You can also pass the code as an argument: `python redeem.py <verification_code>`.
+
+A single login redeems **all** pending codes for the chosen server. AFK Arena's **Classic and Companions servers don't share codes**, so the script only tries codes tagged for your server (codes meant for the other server are detected and skipped). Each result is recorded in `known_codes.json` (`claimed` / `expired` / `invalid`) so the table above stays accurate and dead codes are never re-tried. Rewards arrive in your **in-game mailbox**.
 
 > ⚠️ **Notes**
 > - Uses the unofficial public endpoint `cdkey.lilith.com/api` and only ever touches **your own** account.
 > - Store your UID as the `AFK_PLAYER_UID` GitHub Secret (or an env var). The verification code is passed per-run and never stored.
-> - Running redemption from a GitHub Action is possible (`workflow_dispatch` input) but the runner's cold-start can eat most of the 2-minute window — **running locally is recommended**.
+> - The API rate-limits rapid redeems, so the script paces itself (~4s/code) and backs off automatically — a full run takes a couple of minutes. Anything still rate-limited is left `pending`; just run again later.
+> - **Run locally** — a GitHub Action's cold-start can blow the ~2-minute login window.

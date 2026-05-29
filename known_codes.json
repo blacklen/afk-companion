@@ -226,9 +226,9 @@
       "reward": "",
       "context": "xpires On 2025selene NEW Companion – 2bqw69udk3 Companion",
       "first_seen": "2026-05-29T05:28:54.637031",
-      "status": "pending",
-      "last_redeem_result": "",
-      "last_checked": "",
+      "status": "claimed",
+      "last_redeem_result": "ok",
+      "last_checked": "2026-05-29T08:47:05.226843",
       "permanent": false
     },
     "2bqw69udk3": {
