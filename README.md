@@ -25,6 +25,7 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | `b6tuz7utxn` | unknown | — | pending |
 | `belovedhero2025` | classic | 1000 Diamonds, 3000 Diamonds | pending |
 | `bj6xb8kehv` | unknown | — | pending |
+| `Don2025classic` | classic | — | pending |
 | `DON2026classic` | classic | — | pending |
 | `Dragon888` | unknown | — | pending |
 | `DTZDMHXU83` | unknown | — | pending |
@@ -32,13 +33,16 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | `eh2g9fgxg9` | unknown | — | pending |
 | `ER85KTZ6CJ` | unknown | — | pending |
 | `F9K29QAGQW` | unknown | — | pending |
+| `ft55b9hah2` | unknown | — | pending |
 | `ftqbx5mxfp` | unknown | — | pending |
 | `fxbwkxxdt5` | unknown | — | pending |
 | `HAPPY2023` | unknown | — | pending |
+| `hfsy9ziuw6` | unknown | — | pending |
 | `HVBJ9PS6AR` | unknown | — | pending |
 | `HVHPFJ9MWI` | unknown | — | pending |
 | `IB3WIV7626` | unknown | — | pending |
 | `IBI6N3ZBVJ` | unknown | — | pending |
+| `ITGPIC4MP6` | unknown | — | pending |
 | `KQJ4N3FUP9` | unknown | 1,000 Diamonds | pending |
 | `KQN6TGUMXK` | classic | 3000 Diamonds, 10 Common Hero Scrolls | pending |
 | `KQVV44SCJ2` | companions | 1,000 Diamonds | pending |
@@ -55,6 +59,11 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | `n9nsraie2e` | unknown | — | pending |
 | `n9tugjzx92` | unknown | — | pending |
 | `pc6wed5mut` | unknown | — | pending |
+| `pnh8c5n6is` | unknown | — | pending |
+| `qfpcg2scts` | unknown | — | pending |
+| `rfwbf3rfwk` | unknown | — | pending |
+| `ru7gbsv6vh` | unknown | — | pending |
+| `rue3an3st3` | unknown | — | pending |
 | `selene2025` | classic | 1000 Diamonds | pending |
 | `special2023` | unknown | — | pending |
 | `u4fctemje2` | classic | 1,000 Diamonds | pending |
@@ -63,8 +72,13 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | `UJ6R5HS4CF` | companions | — | pending |
 | `ujqrukd2at` | classic | 1200 Diamonds | pending |
 | `vdj82fht4r` | classic | 3000 Diamonds | pending |
+| `w6qx4jhrfm` | unknown | — | pending |
+| `wqwptk8mei` | unknown | — | pending |
+| `ww9idsjadf` | unknown | — | pending |
+| `xnv83w28gp` | unknown | — | pending |
+| `YHJ6FUNIZX` | unknown | — | pending |
 
-_Last updated: 2026-05-29T08:47:05.543082 UTC · 🔒 = permanent_
+_Last updated: 2026-05-29T10:02:48.800328 UTC · 🔒 = permanent_
 <!-- CODES:END -->
 
 > This table is regenerated automatically every run. `🔒` marks permanent codes.
