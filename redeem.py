@@ -31,7 +31,8 @@ SERVERS = {"classic": "afk", "companions": "afkgroup"}  # server name -> `game` 
 # Map the API's `info` string to a code status (F2).
 STATUS_BY_INFO = {
     "ok": "claimed",
-    "err_cdkey_batch_error": "claimed",     # already redeemed on this account
+    "err_cdkey_batch_error": "claimed",       # already redeemed on this account
+    "err_cdkey_already_used": "claimed",      # already redeemed (alternate error key)
     "err_cdkey_expired": "expired",
     "err_cdkey_record_not_found": "invalid",
 }
