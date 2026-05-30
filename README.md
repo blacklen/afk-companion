@@ -15,14 +15,16 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | `2bxn4k86qd` | classic | 1000 Diamonds | pending |
 | `426653P7TD` | classic | 3000 Diamonds | pending |
 | `42N6CAGKSV` | companions | — | claimed |
+| `4hg98bkkfh` | classic | — | pending |
+| `4hpxmzav3e` | companions | — | claimed |
 | `4hwzcs2umh` | classic | — | pending |
 | `afk888` 🔒 | all | Permanent code | pending |
 | `belovedhero2025` | classic | 1000 Diamonds, 3000 Diamonds | pending |
 | `Don2025classic` | classic | — | pending |
 | `DON2026classic` | classic | — | pending |
 | `DTZDMHXU83` | unknown | — | pending |
-| `hfsy9ziuw6` | unknown | — | pending |
 | `KQN6TGUMXK` | classic | 3000 Diamonds, 10 Common Hero Scrolls | pending |
+| `lilith13th` | companions | — | claimed |
 | `lilithhappy2026` | classic | 1000 Diamonds | pending |
 | `MGEB84EY4Z` | classic | — | pending |
 | `misevj66yi` 🔒 | all | Permanent code | pending |
@@ -34,7 +36,7 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | `ujqrukd2at` | classic | 1200 Diamonds | pending |
 | `vdj82fht4r` | classic | 3000 Diamonds | pending |
 
-_Last updated: 2026-05-30T16:07:40.595527 UTC · 🔒 = permanent_
+_Last updated: 2026-05-30T16:54:58.016849 UTC · 🔒 = permanent_
 <!-- CODES:END -->
 
 > This table is regenerated automatically every run. `🔒` marks permanent codes.
@@ -84,6 +86,11 @@ The scraper only *tells* you about codes. `redeem.py` actually **claims every pe
 Logging in needs a **verification code that rotates every ~2 minutes** (generated in-game), so this step can't run unattended on the cron — you trigger it and paste a fresh code. Once logged in, the session lasts ~3 hours, so it redeems your codes at a polite pace.
 
 ```bash
+# 0. Install dependencies into a virtual environment (first time only)
+python3 -m venv .venv
+source .venv/bin/activate            # re-run this line in any new terminal
+pip install -r requirements.txt
+
 # 1. Find your numeric UID in-game (tap your profile)
 export AFK_PLAYER_UID=<your_uid>
 export AFK_SERVER=companions        # or "classic" (default: companions)

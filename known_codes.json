@@ -699,9 +699,9 @@
       "reward": "",
       "context": "hfsy9ziuw6",
       "first_seen": "2026-05-29T10:02:48.593932",
-      "status": "pending",
-      "last_redeem_result": "",
-      "last_checked": "",
+      "status": "expired",
+      "last_redeem_result": "err_cdkey_expired",
+      "last_checked": "2026-05-30T16:47:51.815493",
       "permanent": false
     },
     "YHJ6FUNIZX": {
@@ -768,6 +768,39 @@
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
       "last_checked": "2026-05-30T05:08:29.816005",
+      "permanent": false
+    },
+    "lilith13th": {
+      "source": "Discord",
+      "server": "companions",
+      "reward": "",
+      "context": "Discord drop (valid until 2026-05-31)",
+      "first_seen": "2026-05-30T16:51:14.137329",
+      "status": "claimed",
+      "last_redeem_result": "ok",
+      "last_checked": "2026-05-30T16:52:52.980278",
+      "permanent": false
+    },
+    "4hg98bkkfh": {
+      "source": "Discord",
+      "server": "classic",
+      "reward": "",
+      "context": "Discord drop (valid until 2026-05-31)",
+      "first_seen": "2026-05-30T16:51:14.137583",
+      "status": "pending",
+      "last_redeem_result": "",
+      "last_checked": "",
+      "permanent": false
+    },
+    "4hpxmzav3e": {
+      "source": "Discord",
+      "server": "companions",
+      "reward": "",
+      "context": "Discord drop (valid until 2026-05-31)",
+      "first_seen": "2026-05-30T16:51:14.137592",
+      "status": "claimed",
+      "last_redeem_result": "ok",
+      "last_checked": "2026-05-30T16:52:57.503715",
       "permanent": false
     }
   }
