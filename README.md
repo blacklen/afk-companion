@@ -36,7 +36,7 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | `ujqrukd2at` | classic | 1200 Diamonds | pending |
 | `vdj82fht4r` | classic | 3000 Diamonds | pending |
 
-_Last updated: 2026-06-07T02:50:12.585763 UTC · 🔒 = permanent_
+_Last updated: 2026-06-08T02:52:54.578645 UTC · 🔒 = permanent_
 <!-- CODES:END -->
 
 > This table is regenerated automatically every run. `🔒` marks permanent codes.
