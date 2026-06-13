@@ -228,7 +228,7 @@
       "first_seen": "2026-05-29T05:28:54.637031",
       "status": "claimed",
       "last_redeem_result": "ok",
-      "last_checked": "2026-05-29T08:47:05.226843",
+      "last_checked": "2026-06-13T11:11:31.711670",
       "permanent": false
     },
     "2bqw69udk3": {
@@ -239,7 +239,7 @@
       "first_seen": "2026-05-29T05:28:54.637032",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:44:30.569481",
+      "last_checked": "2026-06-13T11:11:36.293450",
       "permanent": false
     },
     "KQJ4N3FUP9": {
@@ -250,7 +250,7 @@
       "first_seen": "2026-05-29T05:28:54.637034",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:50:10.330116",
+      "last_checked": "2026-06-13T11:15:20.110199",
       "permanent": false
     },
     "MG673B4BIX": {
@@ -261,7 +261,7 @@
       "first_seen": "2026-05-29T05:28:54.637035",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:50:30.303718",
+      "last_checked": "2026-06-13T11:15:39.928444",
       "permanent": false
     },
     "42N6CAGKSV": {
@@ -271,8 +271,8 @@
       "context": "42N6CAGKSV : Free rewards for companions ( NEW )",
       "first_seen": "2026-05-29T05:28:54.637036",
       "status": "claimed",
-      "last_redeem_result": "err_cdkey_already_used",
-      "last_checked": "2026-05-30T04:47:41.337443",
+      "last_redeem_result": "err_cdkey_expired",
+      "last_checked": "2026-06-13T11:11:56.197068",
       "permanent": false
     },
     "UJ6R5HS4CF": {
@@ -283,7 +283,7 @@
       "first_seen": "2026-05-29T05:28:54.637037",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:48:01.306681",
+      "last_checked": "2026-06-13T11:12:16.329980",
       "permanent": false
     },
     "MGEB84EY4Z": {
@@ -305,7 +305,7 @@
       "first_seen": "2026-05-29T05:28:54.637040",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:48:05.900200",
+      "last_checked": "2026-06-13T11:12:36.106457",
       "permanent": false
     },
     "KQN6TGUMXK": {
@@ -327,7 +327,7 @@
       "first_seen": "2026-05-29T05:28:54.637042",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:50:50.267786",
+      "last_checked": "2026-06-13T11:15:44.295585",
       "permanent": false
     },
     "mp8mt8q5fp": {
@@ -338,7 +338,7 @@
       "first_seen": "2026-05-29T05:28:54.637043",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:51:10.133908",
+      "last_checked": "2026-06-13T11:16:04.175224",
       "permanent": false
     },
     "mpv3vuctf6": {
@@ -349,7 +349,7 @@
       "first_seen": "2026-05-29T05:28:54.637044",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:51:14.740824",
+      "last_checked": "2026-06-13T11:16:24.114226",
       "permanent": false
     },
     "pc6wed5mut": {
@@ -360,7 +360,7 @@
       "first_seen": "2026-05-29T05:28:54.637046",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:51:34.708298",
+      "last_checked": "2026-06-13T11:16:28.504154",
       "permanent": false
     },
     "n9tugjzx92": {
@@ -371,7 +371,7 @@
       "first_seen": "2026-05-29T05:28:54.637047",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:51:54.678167",
+      "last_checked": "2026-06-13T11:16:48.411375",
       "permanent": false
     },
     "n98qbeanvg": {
@@ -382,7 +382,7 @@
       "first_seen": "2026-05-29T05:28:54.637048",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:51:59.304073",
+      "last_checked": "2026-06-13T11:17:08.276457",
       "permanent": false
     },
     "n9kyrevxxx": {
@@ -393,7 +393,7 @@
       "first_seen": "2026-05-29T05:28:54.637049",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:52:19.356544",
+      "last_checked": "2026-06-13T11:17:28.134020",
       "permanent": false
     },
     "n9nsraie2e": {
@@ -404,7 +404,7 @@
       "first_seen": "2026-05-29T05:28:54.637050",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:52:39.325716",
+      "last_checked": "2026-06-13T11:17:32.547818",
       "permanent": false
     },
     "HVBJ9PS6AR": {
@@ -415,7 +415,7 @@
       "first_seen": "2026-05-29T05:28:54.637051",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:52:59.495148",
+      "last_checked": "2026-06-13T11:17:52.519375",
       "permanent": false
     },
     "IBI6N3ZBVJ": {
@@ -426,7 +426,7 @@
       "first_seen": "2026-05-29T05:28:54.637053",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:53:19.552320",
+      "last_checked": "2026-06-13T11:18:12.486767",
       "permanent": false
     },
     "HVHPFJ9MWI": {
@@ -437,7 +437,7 @@
       "first_seen": "2026-05-29T05:28:54.637054",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:53:39.638992",
+      "last_checked": "2026-06-13T11:18:32.456144",
       "permanent": false
     },
     "IB3WIV7626": {
@@ -448,7 +448,7 @@
       "first_seen": "2026-05-29T05:28:54.637055",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:53:59.495674",
+      "last_checked": "2026-06-13T11:18:52.421702",
       "permanent": false
     },
     "ftqbx5mxfp": {
@@ -459,7 +459,7 @@
       "first_seen": "2026-05-29T05:28:54.637056",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:54:19.558763",
+      "last_checked": "2026-06-13T11:19:12.389645",
       "permanent": false
     },
     "fxbwkxxdt5": {
@@ -470,7 +470,7 @@
       "first_seen": "2026-05-29T05:28:54.637058",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:54:39.546441",
+      "last_checked": "2026-06-13T11:19:32.186906",
       "permanent": false
     },
     "Dragon888": {
@@ -481,7 +481,7 @@
       "first_seen": "2026-05-29T05:28:54.637059",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:54:59.619136",
+      "last_checked": "2026-06-13T11:19:52.223525",
       "permanent": false
     },
     "ER85KTZ6CJ": {
@@ -492,7 +492,7 @@
       "first_seen": "2026-05-29T05:28:54.637060",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:55:19.689070",
+      "last_checked": "2026-06-13T11:20:12.256709",
       "permanent": false
     },
     "F9K29QAGQW": {
@@ -503,7 +503,7 @@
       "first_seen": "2026-05-29T05:28:54.637061",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:55:39.861731",
+      "last_checked": "2026-06-13T11:20:32.160173",
       "permanent": false
     },
     "eh2g9fgxg9": {
@@ -514,7 +514,7 @@
       "first_seen": "2026-05-29T05:28:54.637063",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:55:44.367509",
+      "last_checked": "2026-06-13T11:20:36.561799",
       "permanent": false
     },
     "lilith11th": {
@@ -525,7 +525,7 @@
       "first_seen": "2026-05-29T05:28:54.637064",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:56:04.744884",
+      "last_checked": "2026-06-13T11:20:56.429173",
       "permanent": false
     },
     "ecne2zthiz": {
@@ -536,7 +536,7 @@
       "first_seen": "2026-05-29T05:28:54.637065",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:56:09.353205",
+      "last_checked": "2026-06-13T11:21:16.295180",
       "permanent": false
     },
     "b6tuz7utxn": {
@@ -547,7 +547,7 @@
       "first_seen": "2026-05-29T05:28:54.637066",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:56:29.495954",
+      "last_checked": "2026-06-13T11:21:36.107070",
       "permanent": false
     },
     "bj6xb8kehv": {
@@ -558,7 +558,7 @@
       "first_seen": "2026-05-29T05:28:54.637067",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:56:49.494827",
+      "last_checked": "2026-06-13T11:21:40.564933",
       "permanent": false
     },
     "at7i63zyga": {
@@ -569,7 +569,7 @@
       "first_seen": "2026-05-29T05:28:54.637069",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:57:09.449377",
+      "last_checked": "2026-06-13T11:22:00.635301",
       "permanent": false
     },
     "afknew2024": {
@@ -580,7 +580,7 @@
       "first_seen": "2026-05-29T05:28:54.637070",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:57:29.519796",
+      "last_checked": "2026-06-13T11:22:20.601018",
       "permanent": false
     },
     "9wf6pjg7td": {
@@ -591,7 +591,7 @@
       "first_seen": "2026-05-29T05:28:54.637071",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:57:49.501402",
+      "last_checked": "2026-06-13T11:22:40.617874",
       "permanent": false
     },
     "afksummer2023": {
@@ -602,7 +602,7 @@
       "first_seen": "2026-05-29T05:28:54.637072",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:58:09.674302",
+      "last_checked": "2026-06-13T11:23:00.539929",
       "permanent": false
     },
     "HAPPY2023": {
@@ -613,7 +613,7 @@
       "first_seen": "2026-05-29T05:28:54.637073",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:58:29.847184",
+      "last_checked": "2026-06-13T11:23:20.507689",
       "permanent": false
     },
     "rue3an3st3": {
@@ -624,7 +624,7 @@
       "first_seen": "2026-05-29T10:02:48.593912",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:58:34.455329",
+      "last_checked": "2026-06-13T11:23:40.271121",
       "permanent": false
     },
     "ru7gbsv6vh": {
@@ -635,7 +635,7 @@
       "first_seen": "2026-05-29T10:02:48.593922",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:58:54.526219",
+      "last_checked": "2026-06-13T11:24:00.150320",
       "permanent": false
     },
     "rfwbf3rfwk": {
@@ -646,7 +646,7 @@
       "first_seen": "2026-05-29T10:02:48.593924",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:59:14.597754",
+      "last_checked": "2026-06-13T11:24:19.947108",
       "permanent": false
     },
     "pnh8c5n6is": {
@@ -657,7 +657,7 @@
       "first_seen": "2026-05-29T10:02:48.593926",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:59:34.769874",
+      "last_checked": "2026-06-13T11:24:24.353155",
       "permanent": false
     },
     "qfpcg2scts": {
@@ -668,7 +668,7 @@
       "first_seen": "2026-05-29T10:02:48.593927",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:59:39.380841",
+      "last_checked": "2026-06-13T11:24:44.375027",
       "permanent": false
     },
     "ITGPIC4MP6": {
@@ -679,7 +679,7 @@
       "first_seen": "2026-05-29T10:02:48.593928",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T04:59:59.553026",
+      "last_checked": "2026-06-13T11:25:04.184646",
       "permanent": false
     },
     "Don2025classic": {
@@ -701,7 +701,7 @@
       "first_seen": "2026-05-29T10:02:48.593932",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T16:47:51.815493",
+      "last_checked": "2026-06-13T11:25:24.027969",
       "permanent": false
     },
     "YHJ6FUNIZX": {
@@ -712,7 +712,7 @@
       "first_seen": "2026-05-29T10:02:48.593933",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T05:07:04.747040",
+      "last_checked": "2026-06-13T11:25:28.513788",
       "permanent": false
     },
     "xnv83w28gp": {
@@ -723,7 +723,7 @@
       "first_seen": "2026-05-29T10:02:48.593943",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T05:07:09.329891",
+      "last_checked": "2026-06-13T11:25:48.308843",
       "permanent": false
     },
     "ww9idsjadf": {
@@ -734,7 +734,7 @@
       "first_seen": "2026-05-29T10:02:48.593944",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T05:07:29.403197",
+      "last_checked": "2026-06-13T11:26:08.168649",
       "permanent": false
     },
     "wqwptk8mei": {
@@ -745,7 +745,7 @@
       "first_seen": "2026-05-29T10:02:48.593946",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T05:07:49.567754",
+      "last_checked": "2026-06-13T11:26:28.136562",
       "permanent": false
     },
     "w6qx4jhrfm": {
@@ -756,7 +756,7 @@
       "first_seen": "2026-05-29T10:02:48.593947",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T05:08:09.744589",
+      "last_checked": "2026-06-13T11:26:32.650652",
       "permanent": false
     },
     "ft55b9hah2": {
@@ -767,7 +767,7 @@
       "first_seen": "2026-05-29T10:02:48.593948",
       "status": "expired",
       "last_redeem_result": "err_cdkey_expired",
-      "last_checked": "2026-05-30T05:08:29.816005",
+      "last_checked": "2026-06-13T11:26:52.610683",
       "permanent": false
     },
     "lilith13th": {
@@ -778,7 +778,7 @@
       "first_seen": "2026-05-30T16:51:14.137329",
       "status": "claimed",
       "last_redeem_result": "ok",
-      "last_checked": "2026-05-30T16:52:52.980278",
+      "last_checked": "2026-06-13T11:12:56.368543",
       "permanent": false
     },
     "4hg98bkkfh": {
@@ -800,7 +800,7 @@
       "first_seen": "2026-05-30T16:51:14.137592",
       "status": "claimed",
       "last_redeem_result": "ok",
-      "last_checked": "2026-05-30T16:52:57.503715",
+      "last_checked": "2026-06-13T11:13:16.234515",
       "permanent": false
     }
   }

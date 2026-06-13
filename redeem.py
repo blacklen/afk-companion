@@ -5,10 +5,12 @@ this can't run on the unattended cron — you trigger it and hand it a fresh cod
 A single verified session redeems all of your server's pending codes at once.
 
 Usage:
-    AFK_PLAYER_UID=<uid> [AFK_SERVER=companions|classic] python redeem.py [code]
+    python redeem.py uid=<uid> [server=companions|classic] [code] [--all]
 
-If you omit the code it prompts for it (so the request fires the instant you
-paste — important, since the code rotates every ~2 min).
+uid/server also fall back to the AFK_PLAYER_UID / AFK_SERVER env vars. --all
+attempts every code (not just pending) — useful for a fresh account, since the
+store's statuses are shared across accounts. If you omit the code it prompts for
+it (so the request fires the instant you paste — the code rotates every ~2 min).
 
 Get the verification code in-game: profile → Settings → Verification Code.
 
@@ -68,15 +70,54 @@ def _get(session, endpoint, params):
         raise RuntimeError(f"HTTP {resp.status_code} (non-JSON): {resp.text[:400]!r}")
 
 
+USAGE = (
+    "Usage: python redeem.py uid=<uid> [server=companions|classic] [code] [--all]\n"
+    "  uid=<uid>            your numeric in-game UID (or set AFK_PLAYER_UID)\n"
+    "  server=<name>        companions (default) or classic (or set AFK_SERVER)\n"
+    "  code / code=<code>   verification code; omit to be prompted for a fresh one\n"
+    "  --all, -a            attempt every code for the server, not just pending"
+)
+
+
+def parse_args(argv):
+    """Parse `key=value` args, an optional bare verification code, and --all.
+    CLI args take precedence over the AFK_* env vars (kept as a fallback)."""
+    uid = server = code = None
+    redeem_all = bool(os.environ.get("AFK_REDEEM_ALL"))
+    for tok in argv:
+        if tok in ("--all", "-a"):
+            redeem_all = True
+        elif "=" in tok and not tok.startswith("-"):
+            key, _, val = tok.partition("=")
+            key = key.strip().lower()
+            if key == "uid":
+                uid = val.strip()
+            elif key == "server":
+                server = val.strip()
+            elif key == "code":
+                code = val.strip()
+            else:
+                print(f"[!] Unknown argument: {tok!r}\n{USAGE}")
+                sys.exit(1)
+        elif tok.startswith("-"):
+            print(f"[!] Unknown flag: {tok!r}\n{USAGE}")
+            sys.exit(1)
+        else:
+            code = tok.strip()  # bare token = verification code
+
+    uid = uid or os.environ.get("AFK_PLAYER_UID")
+    server = (server or os.environ.get("AFK_SERVER") or "companions").strip().lower()
+    return uid, server, code, redeem_all
+
+
 def main():
-    uid = os.environ.get("AFK_PLAYER_UID")
+    uid, server, code_arg, redeem_all = parse_args(sys.argv[1:])
     if not uid:
-        print("[!] AFK_PLAYER_UID not set. Export it or add it as a GitHub Secret.")
+        print(f"[!] No UID. Pass uid=<uid> or set AFK_PLAYER_UID.\n{USAGE}")
         sys.exit(1)
 
-    server = os.environ.get("AFK_SERVER", "companions").strip().lower()
     if server not in SERVERS:
-        print(f"[!] AFK_SERVER must be one of {list(SERVERS)} (got {server!r}).")
+        print(f"[!] server must be one of {list(SERVERS)} (got {server!r}).")
         sys.exit(1)
     game = SERVERS[server]
 
@@ -91,8 +132,8 @@ def main():
         "Referer": "https://cdkey.lilith.com/afk-global",
     })
 
-    if len(sys.argv) >= 2:
-        verification_code = sys.argv[1].strip()
+    if code_arg:
+        verification_code = code_arg
     else:
         print(f"UID: {uid}   Server: {server} (game={game})")
         print("In-game: profile → Settings → Verification Code (changes every ~2 min).")
@@ -135,13 +176,15 @@ def main():
     # server's own codes first for the clearest signal.
     store = load_store()
     allowed = {"unknown", "all", server}
+    scope = "all" if redeem_all else "pending"
     pending = [c for c, e in store["codes"].items()
-               if e.get("status") == "pending" and e.get("server", "unknown") in allowed]
+               if e.get("server", "unknown") in allowed
+               and (redeem_all or e.get("status") == "pending")]
     pending.sort(key=lambda c: store["codes"][c].get("server", "unknown") != server)
     if not pending:
-        print(f"[=] No pending {server} codes to redeem.")
+        print(f"[=] No {scope} {server} codes to redeem.")
         return
-    print(f"[*] Redeeming {len(pending)} pending {server} code(s)...")
+    print(f"[*] Redeeming {len(pending)} {scope} {server} code(s)...")
 
     claimed = channel_errs = rate_limited = 0
     for idx, code in enumerate(pending):
@@ -191,7 +234,10 @@ def main():
 
         status = STATUS_BY_INFO.get(info, "claimed" if info == "ok" else "invalid")
         entry = store["codes"][code]
-        entry["status"] = status
+        # Don't downgrade a code already marked claimed (e.g. another account's
+        # redeem) just because this account got a non-claim result for it.
+        if not (entry.get("status") == "claimed" and status != "claimed"):
+            entry["status"] = status
         entry["last_redeem_result"] = info or "ok"
         entry["last_checked"] = now_iso()
         if status == "claimed":

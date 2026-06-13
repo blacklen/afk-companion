@@ -36,7 +36,7 @@ Automatically scrapes and sends push notifications via **ntfy.sh** whenever new 
 | `ujqrukd2at` | classic | 1200 Diamonds | pending |
 | `vdj82fht4r` | classic | 3000 Diamonds | pending |
 
-_Last updated: 2026-06-13T02:42:42.464567 UTC · 🔒 = permanent_
+_Last updated: 2026-06-13T11:26:52.617528 UTC · 🔒 = permanent_
 <!-- CODES:END -->
 
 > This table is regenerated automatically every run. `🔒` marks permanent codes.
@@ -75,7 +75,7 @@ Go to the **Actions** tab → **AFK Arena Code Tracker** → **Run workflow**
 If new codes are found, you'll receive a notification on your phone right away!
 
 ## ⏰ Schedule
-Runs automatically every **3 hours**, completely free.
+Runs automatically **once a week** (Sundays 00:00 UTC), completely free.
 
 ---
 
@@ -91,15 +91,20 @@ python3 -m venv .venv
 source .venv/bin/activate            # re-run this line in any new terminal
 pip install -r requirements.txt
 
-# 1. Find your numeric UID in-game (tap your profile)
-export AFK_PLAYER_UID=<your_uid>
-export AFK_SERVER=companions        # or "classic" (default: companions)
-
-# 2. Run it, then paste a FRESH code at the prompt (Settings → Verification Code)
-python redeem.py
+# 1. Find your numeric UID in-game (tap your profile), then run it and paste a
+#    FRESH code at the prompt (Settings → Verification Code). server is optional
+#    — "companions" (default) or "classic".
+python redeem.py uid=12345 server=companions
 ```
 
-You can also pass the code as an argument: `python redeem.py <verification_code>`.
+You can also pass the code as an argument: `python redeem.py uid=12345 654321`.
+(`uid`/`server` also fall back to the `AFK_PLAYER_UID` / `AFK_SERVER` env vars.)
+
+**New/extra account?** Statuses in `known_codes.json` are shared, so a code another account already `claimed` is normally skipped. Add `--all` to attempt **every** code for the server, not just `pending` ones:
+
+```bash
+python redeem.py uid=12345 server=companions --all
+```
 
 A single login redeems **all** pending codes for the chosen server. AFK Arena's **Classic and Companions servers don't share codes**, so the script only tries codes tagged for your server (codes meant for the other server are detected and skipped). Each result is recorded in `known_codes.json` (`claimed` / `expired` / `invalid`) so the table above stays accurate and dead codes are never re-tried. Rewards arrive in your **in-game mailbox**.
 
